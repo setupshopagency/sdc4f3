@@ -1607,7 +1607,7 @@ figcaption {
 
 .product-item_component {
   z-index: 30;
-  box-shadow: 0 .6em 0 0 var(--pork);
+  box-shadow: none;
   border-radius: 3em;
   flex-direction: column;
   padding: 0 1.8em 1.7em;
@@ -4708,6 +4708,12 @@ figcaption {
 
 .button-color {
   border-radius: .5em;
+}
+
+.shadow {
+  border-radius: 3em;
+  position: absolute;
+  inset: 0% 0% -.65em;
 }
 
 @media screen and (min-width: 1280px) {
