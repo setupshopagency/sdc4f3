@@ -14,7 +14,6 @@
   --background-color--background-tertiary: var(--base-color-brand--pink);
   --brand-yellow: #ff9e01;
   --base-color-neutral--neutral-lightest: #eee;
-  --accessible-components-dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
   --text-color--text-error: var(--base-color-system--error-red-dark);
   --brand-orage: #ef6511;
   --base-color-system--success-green-dark: #17660f;
@@ -2025,12 +2024,17 @@ figcaption {
 }
 
 .swiper-slide.is-product-thumbnail {
+  flex: none;
+  justify-content: center;
+  align-items: center;
   width: 5rem;
   height: 5rem;
+  display: flex;
 }
 
 .swiper-slide.is-product-thumbnail.is-active {
-  border: 1px solid var(--accessible-components-dark-grey\<deleted\|variable-c4d8099c\>);
+  border-radius: var(--border-radius--medium);
+  border: 1px solid red;
 }
 
 .swiper_button-wrapper {
@@ -2105,9 +2109,9 @@ figcaption {
   border-radius: var(--border-radius--medium);
   background-color: var(--base-color-neutral--neutral-lightest);
   cursor: pointer;
+  flex: 1;
   justify-content: center;
   align-items: center;
-  height: 100%;
   display: flex;
 }
 
@@ -4464,7 +4468,7 @@ figcaption {
 }
 
 .spacer-product {
-  height: 10rem;
+  height: 15rem;
 }
 
 .container_instafeed {
@@ -4732,6 +4736,12 @@ figcaption {
   height: 80%;
   position: absolute;
   inset: auto 0% -.65em;
+}
+
+.button-bg {
+  background-color: #d1401a;
+  border-radius: .5em;
+  flex: 1;
 }
 
 @media screen and (min-width: 1280px) {
@@ -5170,6 +5180,7 @@ figcaption {
   .swiper-container.is-product-gallery {
     width: 92vw;
     padding-right: 0;
+    position: static;
   }
 
   .footer_member-wrapper {
