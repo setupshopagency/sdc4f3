@@ -2040,7 +2040,7 @@ figcaption {
 
 .swiper-slide.is-product-thumbnail.is-active {
   border-radius: var(--border-radius--medium);
-  border: 1px solid red;
+  border: 1px solid #d1401a;
 }
 
 .swiper_button-wrapper {
@@ -2217,7 +2217,7 @@ figcaption {
 
 .predictive-search_holder {
   z-index: 100;
-  background-color: #fff;
+  background-color: #fff1dc;
   flex-direction: column;
   height: 100%;
   padding: 1.5rem;
@@ -2240,8 +2240,8 @@ figcaption {
 }
 
 .predictive-search_input-holder {
-  background-color: #f9f9f9;
-  border: 1px solid #000;
+  border: 1px solid var(--brand-yellow);
+  background-color: #fff1dc;
   justify-content: space-between;
   align-items: center;
   height: 3.5rem;
@@ -2299,7 +2299,6 @@ figcaption {
 }
 
 .predictive-search_line-item {
-  background-color: #fff;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -2329,7 +2328,7 @@ figcaption {
 }
 
 .predictive-search_component {
-  background-color: var(--base-color-neutral--white);
+  background-color: var(--brand-yellow);
   flex-direction: column;
   align-items: stretch;
   width: 28rem;
@@ -3052,6 +3051,8 @@ figcaption {
 }
 
 .nav_dropdown {
+  cursor: pointer;
+  padding: 1.5rem;
   display: block;
 }
 
@@ -4725,13 +4726,18 @@ figcaption {
 .wrap_mini-cart {
   z-index: 999;
   background-color: var(--brand-yellow);
-  border-radius: 7em;
+  border: 3px solid #ffc465;
+  border-radius: 100em;
   flex-flow: row;
   margin-bottom: 2em;
   margin-right: 3em;
-  padding: 1em 2em;
+  transition: background-color .2s ease-in-out;
   position: fixed;
   inset: auto 0% 0% auto;
+}
+
+.wrap_mini-cart:hover {
+  background-color: #ffb43c;
 }
 
 .button-color {
@@ -4789,6 +4795,10 @@ figcaption {
 
   .heading-style-h4.product-card-name {
     font-size: 6em;
+  }
+
+  .mini-cart_footer {
+    background-color: #fff1dc;
   }
 
   .product-item_component {
@@ -5998,6 +6008,10 @@ figcaption {
     grid-row-gap: 2rem;
     flex-wrap: wrap;
     padding: 1.5rem;
+  }
+
+  .nav_dropdown {
+    padding: 1rem;
   }
 
   .heading-style-h5 {
