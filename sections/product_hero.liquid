@@ -46,7 +46,7 @@
 {% endif %}<div class="img_spacer-1-5em"></div><div class="product-header_ad-to-cart-wrapper"><template x-if="selected_or_first_available_variant.available == true">
             <div li-js-if="selected_or_first_available_variant.available == true" class="product-header_quantity">
         <input class="form-input is-quantity w-input" maxlength="256" name="quantity" li-element="add-to-cart-quantity" data-name="quantity" placeholder="1" type="number" id="quantity" required="" x-model="quantity">
-<a li-element="add-to-cart" href="#" class="button max-width-full w-button" @click="addToCart()" :disabled="!addToCartButton">Add to cart</a>        </div>
+<div class="button-bg"><a li-element="add-to-cart" href="#" class="button max-width-full w-button" @click="addToCart()" :disabled="!addToCartButton">Add to cart</a></div>        </div>
     </template>
 <template x-if="selected_or_first_available_variant.available != true">
             <div li-js-if="selected_or_first_available_variant.available != true">
