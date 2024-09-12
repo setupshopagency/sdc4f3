@@ -4771,6 +4771,10 @@ figcaption {
   display: flex;
 }
 
+.section_page-content {
+  height: 60vh;
+}
+
 @media screen and (min-width: 1280px) {
   .product-item_image-link {
     overflow: hidden;
@@ -5649,11 +5653,15 @@ figcaption {
   }
 
   .h2_section-heading {
-    font-size: 9em;
+    font-size: 8em;
   }
 
   .txt_paragraph {
     font-size: 1.7em;
+  }
+
+  .txt_paragraph.our-story {
+    max-width: 24em;
   }
 
   .container-footer {
@@ -5672,6 +5680,11 @@ figcaption {
     flex: 0 0 21em;
   }
 
+  .wrap_our-story-texts {
+    z-index: 30;
+    position: relative;
+  }
+
   .wrap_footer-content {
     grid-column-gap: 6em;
     grid-row-gap: 6em;
@@ -5684,6 +5697,12 @@ figcaption {
 
   .wrap_fur-parents {
     max-width: 28em;
+  }
+
+  .wrap_our-story-hero {
+    z-index: 25;
+    font-size: .9vw;
+    right: -14.9em;
   }
 }
 
@@ -6416,6 +6435,10 @@ figcaption {
     font-size: 1.2vw;
   }
 
+  .wrap_our-story-texts {
+    grid-row-gap: 3em;
+  }
+
   .wrap_footer-content {
     grid-column-gap: 2em;
     grid-row-gap: 4em;
@@ -6433,6 +6456,11 @@ figcaption {
   .wrap_fur-parents {
     max-width: 30em;
     inset: -16% auto auto 17%;
+  }
+
+  .wrap_our-story-hero {
+    font-size: 1.5vw;
+    right: -9.5em;
   }
 }
 
@@ -6969,16 +6997,23 @@ figcaption {
   }
 
   .card_our-story {
-    padding-left: 4.5em;
-    padding-right: 4.5em;
+    padding: 8.7em 4.5em;
   }
 
   .h2_section-heading.join-the-club {
     font-size: 13em;
   }
 
+  .h2_section-heading.our-story {
+    font-size: 18em;
+  }
+
   .txt_paragraph {
     font-size: 4.1em;
+  }
+
+  .txt_paragraph.our-story {
+    max-width: 16em;
   }
 
   .section_testimonials {
@@ -7039,6 +7074,10 @@ figcaption {
     font-size: 1.8vw;
   }
 
+  .wrap_our-story-texts {
+    grid-row-gap: 4em;
+  }
+
   .wrap_footer-content {
     grid-column-gap: 3em;
     grid-row-gap: 3em;
@@ -7059,6 +7098,11 @@ figcaption {
 
   .div-block-7 {
     min-height: 4vh;
+  }
+
+  .wrap_our-story-hero {
+    font-size: 2.5vw;
+    right: -17.3em;
   }
 }
 
