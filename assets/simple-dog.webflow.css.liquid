@@ -3820,8 +3820,8 @@ figcaption {
   flex-flow: column;
   justify-content: flex-end;
   align-items: stretch;
-  height: 400em;
-  max-height: 94vh;
+  max-height: 96vh;
+  padding-top: 5em;
   display: flex;
 }
 
@@ -3835,7 +3835,7 @@ figcaption {
   border-radius: 1.8em;
   width: 100vw;
   max-width: 98vw;
-  height: 90%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -3901,7 +3901,7 @@ figcaption {
   text-transform: uppercase;
   text-shadow: 2px 2px 1px #fff;
   color: #3f2b10;
-  font-size: 6.2em;
+  font-size: 6em;
   font-weight: 900;
   line-height: .9;
 }
@@ -4009,8 +4009,8 @@ figcaption {
   justify-content: flex-start;
   align-items: stretch;
   height: 100%;
-  padding-top: 9.5em;
-  padding-bottom: 2em;
+  padding-top: 10em;
+  padding-bottom: 10em;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -4735,6 +4735,7 @@ figcaption {
 }
 
 .wrap_our-story-hero {
+  pointer-events: none;
   width: 100em;
   max-width: 33em;
   height: 100em;
@@ -4842,8 +4843,9 @@ figcaption {
     max-width: 40em;
   }
 
-  .h1_hero-headline {
-    font-size: 6em;
+  .hero-content {
+    padding-top: 9em;
+    padding-bottom: 9em;
   }
 
   .img_usa-made-and-sourced {
@@ -4884,16 +4886,17 @@ figcaption {
     justify-content: space-between;
   }
 
-  .h1_hero-headline {
-    font-size: 5.5em;
-  }
-
   .body {
     color: var(--texts);
   }
 
   .marquee-wrap {
     width: 105%;
+  }
+
+  .hero-content {
+    padding-top: 8em;
+    padding-bottom: 8em;
   }
 
   .benefits-label {
@@ -5654,7 +5657,7 @@ figcaption {
   .hero-content {
     justify-content: center;
     align-items: stretch;
-    padding: 6em 4em 10em;
+    padding: 6em 4em 12em;
   }
 
   .spacer-hero {
@@ -6356,7 +6359,7 @@ figcaption {
   .hero-content {
     justify-content: flex-start;
     align-items: stretch;
-    padding-top: 12.5em;
+    padding-bottom: 28em;
   }
 
   .spacer-hero {
@@ -6477,6 +6480,10 @@ figcaption {
     font-size: 2.4em;
   }
 
+  .txt_paragraph.our-story {
+    margin-bottom: 2rem;
+  }
+
   .section_testimonials {
     border-width: .8em;
   }
@@ -6534,7 +6541,7 @@ figcaption {
   }
 
   .wrap_our-story-texts {
-    grid-row-gap: 3em;
+    grid-row-gap: 1em;
   }
 
   .wrap_footer-content {
@@ -6978,6 +6985,10 @@ figcaption {
     font-size: 2.5rem;
   }
 
+  .cta_button.secondary {
+    font-size: 2.2rem;
+  }
+
   .cta_button.footer {
     font-size: 9em;
   }
@@ -6991,6 +7002,10 @@ figcaption {
     max-width: 74em;
     bottom: -4.8em;
     right: .6em;
+  }
+
+  .h1_hero-headline {
+    line-height: 1;
   }
 
   .marquee-text.heading-style-h3 {
@@ -7008,7 +7023,8 @@ figcaption {
   }
 
   .hero-content {
-    padding-top: 21em;
+    padding-top: 10em;
+    padding-bottom: 74em;
   }
 
   .wrap_hero-storefront-design {
@@ -7124,6 +7140,7 @@ figcaption {
 
   .txt_paragraph.our-story {
     max-width: 16em;
+    margin-bottom: 2rem;
   }
 
   .section_testimonials {
@@ -7185,7 +7202,7 @@ figcaption {
   }
 
   .wrap_our-story-texts {
-    grid-row-gap: 4em;
+    grid-row-gap: 2em;
   }
 
   .wrap_footer-content {
