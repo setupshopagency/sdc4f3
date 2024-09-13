@@ -16,7 +16,7 @@
     </div>
 {% endif %}{% endform %}
 <div class="margin-top-auto"><div class="product-item_form-wrapper">{% if product.available == true %}    <div li-if="product.available == true" class="wrap_add-to-cart">
-    <div class="cta_dynamic-button-color" style="background-color:{{product.metafields.custom.product_color}}"><a li-element="add-to-cart, mini-cart-trigger" href="#" class="button max-width-full w-button">Add to Cart</a></div>    </div>
+    <div class="cta_dynamic-button-color" style="background-color:{{product.metafields.custom.product_color}}"><a li-element="add-to-cart" href="#" class="button max-width-full w-button" @click="addToCart()" :disabled="!addToCartButton">Add to Cart</a></div>    </div>
 {% endif %}{% if product.available != true %}    <div li-if="product.available != true" class="wrap_not-in-stock preview-hide-elements-undo-and-delete">
     <a href="#" class="button is-secondary pointer-events-off max-width-full w-button">Not in Stock</a>    </div>
 {% endif %}</div></div></div><div class="img_white-card"></div><div class="shadow" style="background-color:{{product.metafields.custom.product_color}}"></div>
