@@ -183,7 +183,7 @@
         <div li-js-price="original_total_price" class="text-size-regular text-weight-bold text-style-strikethrough text-style-muted" x-text="moneyFormat(original_total_price)">14,99 $</div>        </div>
     </template>
 </div></div><div li-element="mini-cart-api-response" class="mini-cart_footer-message"></div><a x-bind:href="'/checkout'" href="#" class="button cta_button w-button">Checkout</a><div class="w-embed w-script">{% assign cart_items = cart.items | map: 'product_id' %}
-                            <div class="recommended-products">{% for product in collections['home-page'].products %}
+                            <div class="recommended-products">{% for product in collections['homepage'].products %}
                               <div class="recommended-product" data-product-id="{{ product.id }}"><a href="{{ product.url }}"><img src="{{ product.featured_image | img_url: 'small' }}" alt="{{ product.title }}">
 <p>{{ product.title }}</p></a></div>{% endfor %}
                             </div><script>document.addEventListener("DOMContentLoaded", function() {
