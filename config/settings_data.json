@@ -9,5 +9,28 @@
 */
 {
   "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "7445024463111146658": {
+        "type": "shopify:\/\/apps\/pwa-ios-android-app\/blocks\/app-block\/4ac46764-72e4-4b90-933d-c63e9b80bb36",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   }
 }
