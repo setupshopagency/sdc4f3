@@ -1,0 +1,5 @@
+The following files failed to download during site export. Please check them in the designer assets view (images) or dashboard (fonts).
+
+images/ig-background-p-500.png
+images/img_all-natural_1-p-130x130q80.png
+images/img_simple-dog-footer-p-800.png
